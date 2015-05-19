@@ -1,0 +1,86 @@
+C:\Users\Alessandro\Desktop\NerdOrDungeonsY\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\NerdOrDungeonsY\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Alessandro\Desktop\NerdOrDungeonsY\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Alessandro\Desktop\NerdOrDungeonsY\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Alessandro\Desktop\NerdOrDungeonsY\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\NerdOrDungeonsY\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Content\SpriteTesto.xnb
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Bonigames\Desktop\nerd\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bonigames\Desktop\nerd\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Bonigames\Desktop\nerd\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Bonigames\Desktop\nerd\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Content\SpriteTesto.xnb
+C:\Users\Bonigames\Desktop\nerd\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.exe
+C:\Users\Bonigames\Desktop\nerd\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Bonigames\Desktop\nerd\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.TutorialForm.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.SelectLevelForm.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.GameSettings.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.MultiPlayerSettings.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Game.csproj.GenerateResource.Cache
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.TutorialForm.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.SelectLevelForm.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.GameSettings.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.MultiPlayerSettings.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Content\SpriteTesto.xnb
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.exe
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.InputBox.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Content\SpriteTesto.xnb
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.exe
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.InputBox.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.TutorialForm.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.SelectLevelForm.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.GameSettings.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.MultiPlayerSettings.resources
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.exe
+C:\Users\Bonigames\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Game.ico
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Game.ico
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Content\SpriteTesto.xnb
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.InputBox.resources
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.TutorialForm.resources
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.SelectLevelForm.resources
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.GameSettings.resources
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.MultiPlayerSettings.resources
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Game.csproj.GenerateResource.Cache
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\progetti c#\Visual C#\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.InputBox.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.TutorialForm.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.SelectLevelForm.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.GameSettings.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.MultiPlayerSettings.resources
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Game.csproj.GenerateResource.Cache
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Game.ico
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\Content\SpriteTesto.xnb
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.exe.manifest
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.application
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\bin\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.exe.manifest
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.application
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.exe
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\NerdOrDungeons.pdb
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Game.csprojResolveAssemblyReference.cache

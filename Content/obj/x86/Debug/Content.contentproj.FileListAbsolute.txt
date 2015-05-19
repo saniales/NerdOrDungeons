@@ -1,0 +1,2 @@
+C:\Users\Bonigames\Desktop\nerd\NerdOrDungeons\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\Content\obj\x86\Debug\Content.contentprojResolveAssemblyReference.cache
