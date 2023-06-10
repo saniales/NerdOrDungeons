@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nerd-or-dungeons", "nerd-or-dungeons.csproj", "{FF695805-A73A-49AA-BD64-3C9166B3DDE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF695805-A73A-49AA-BD64-3C9166B3DDE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF695805-A73A-49AA-BD64-3C9166B3DDE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF695805-A73A-49AA-BD64-3C9166B3DDE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF695805-A73A-49AA-BD64-3C9166B3DDE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91B9BE5E-6F19-4FD8-A1BF-8073C36C041F}
+	EndGlobalSection
+EndGlobal

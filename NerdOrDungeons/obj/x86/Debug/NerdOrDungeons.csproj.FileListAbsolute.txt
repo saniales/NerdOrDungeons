@@ -1,2 +1,0 @@
-C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Alessandro\Desktop\NerdOrDungeons\NerdOrDungeons\NerdOrDungeons\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt

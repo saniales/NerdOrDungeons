@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Effects/CannonShot.wav</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Effects/EnemyKilled.wav</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Effects/LittleDevilLaugh.wav</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Effects/PlayerShot.wav</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Effects/PlayerSwordAttack.wav</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Effects/PowerUpTouched.wav</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Effects/ScrollTouched.wav</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Effects/SwitchPressed.wav</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Epilogue.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Menu.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track1.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track10.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track11.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track12.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track13.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track2.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track3.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track4.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track5.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track6.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track7.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track8.mp3</File>
+    <File>C:/Users/Utente/source/repos/nerd-or-dungeons/Content/Sounds/Tracks/Track9.mp3</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

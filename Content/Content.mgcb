@@ -1,0 +1,153 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:True
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Sounds/Effects/CannonShot.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/CannonShot.wav
+
+#begin Sounds/Effects/EnemyKilled.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/EnemyKilled.wav
+
+#begin Sounds/Effects/LittleDevilLaugh.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/LittleDevilLaugh.wav
+
+#begin Sounds/Effects/PlayerShot.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/PlayerShot.wav
+
+#begin Sounds/Effects/PlayerSwordAttack.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/PlayerSwordAttack.wav
+
+#begin Sounds/Effects/PowerUpTouched.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/PowerUpTouched.wav
+
+#begin Sounds/Effects/ScrollTouched.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/ScrollTouched.wav
+
+#begin Sounds/Effects/SwitchPressed.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/SwitchPressed.wav
+
+#begin Sounds/Tracks/Epilogue.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Epilogue.mp3
+
+#begin Sounds/Tracks/Menu.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Menu.mp3
+
+#begin Sounds/Tracks/Track1.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track1.mp3
+
+#begin Sounds/Tracks/Track10.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track10.mp3
+
+#begin Sounds/Tracks/Track11.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track11.mp3
+
+#begin Sounds/Tracks/Track12.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track12.mp3
+
+#begin Sounds/Tracks/Track13.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track13.mp3
+
+#begin Sounds/Tracks/Track2.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track2.mp3
+
+#begin Sounds/Tracks/Track3.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track3.mp3
+
+#begin Sounds/Tracks/Track4.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track4.mp3
+
+#begin Sounds/Tracks/Track5.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track5.mp3
+
+#begin Sounds/Tracks/Track6.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track6.mp3
+
+#begin Sounds/Tracks/Track7.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track7.mp3
+
+#begin Sounds/Tracks/Track8.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track8.mp3
+
+#begin Sounds/Tracks/Track9.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:Sounds/Tracks/Track9.mp3
+

@@ -1,0 +1,2609 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Content\Allies\Mana\000_WAITDOWN.png" />
+    <None Remove="Content\Allies\Mana\001_WAITUP.png" />
+    <None Remove="Content\Allies\Mana\002_WAITLEFT.png" />
+    <None Remove="Content\Allies\Mana\003_WAITRIGHT.png" />
+    <None Remove="Content\Allies\Mana\004_UP1.png" />
+    <None Remove="Content\Allies\Mana\005_UP2.png" />
+    <None Remove="Content\Allies\Mana\006_DOWN1.png" />
+    <None Remove="Content\Allies\Mana\007_DOWN2.png" />
+    <None Remove="Content\Allies\Mana\008_LEFT1.png" />
+    <None Remove="Content\Allies\Mana\009_LEFT2.png" />
+    <None Remove="Content\Allies\Mana\010_RIGHT1.png" />
+    <None Remove="Content\Allies\Mana\011_RIGHT2.png" />
+    <None Remove="Content\Allies\Mana\012_ATTACKDOWN.png" />
+    <None Remove="Content\Allies\Mana\013_ATTACKUP.png" />
+    <None Remove="Content\Allies\Mana\014_ATTACKLEFT.png" />
+    <None Remove="Content\Allies\Mana\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Allies\Mana\016_DEAD.png" />
+    <None Remove="Content\Allies\Prematurator\000_WAITDOWN.png" />
+    <None Remove="Content\Allies\Prematurator\001_WAITUP.png" />
+    <None Remove="Content\Allies\Prematurator\002_WAITLEFT.png" />
+    <None Remove="Content\Allies\Prematurator\003_WAITRIGHT.png" />
+    <None Remove="Content\Allies\Prematurator\004_UP1.png" />
+    <None Remove="Content\Allies\Prematurator\005_UP2.png" />
+    <None Remove="Content\Allies\Prematurator\006_DOWN1.png" />
+    <None Remove="Content\Allies\Prematurator\007_DOWN2.png" />
+    <None Remove="Content\Allies\Prematurator\008_LEFT1.png" />
+    <None Remove="Content\Allies\Prematurator\009_LEFT2.png" />
+    <None Remove="Content\Allies\Prematurator\010_RIGHT1.png" />
+    <None Remove="Content\Allies\Prematurator\011_RIGHT2.png" />
+    <None Remove="Content\Allies\Prematurator\012_ATTACKDOWN.png" />
+    <None Remove="Content\Allies\Prematurator\013_ATTACKUP.png" />
+    <None Remove="Content\Allies\Prematurator\014_ATTACKLEFT.png" />
+    <None Remove="Content\Allies\Prematurator\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Allies\Prematurator\016_DEAD%28Unused%29.png" />
+    <None Remove="Content\Arena\Level.map" />
+    <None Remove="Content\Arena\terreno.png" />
+    <None Remove="Content\Arena\winner.png" />
+    <None Remove="Content\Cursors\Sword.png" />
+    <None Remove="Content\Dungeons\Level10\Level.map" />
+    <None Remove="Content\Dungeons\Level10\terreno.png" />
+    <None Remove="Content\Dungeons\Level11\Level.map" />
+    <None Remove="Content\Dungeons\Level11\terreno.png" />
+    <None Remove="Content\Dungeons\Level12\Level.map" />
+    <None Remove="Content\Dungeons\Level12\terreno.png" />
+    <None Remove="Content\Dungeons\Level13\Level.map" />
+    <None Remove="Content\Dungeons\Level13\terreno.png" />
+    <None Remove="Content\Dungeons\Level14\Level.map" />
+    <None Remove="Content\Dungeons\Level14\terreno.png" />
+    <None Remove="Content\Dungeons\Level15\Level.map" />
+    <None Remove="Content\Dungeons\Level15\terreno.png" />
+    <None Remove="Content\Dungeons\Level16\Level.map" />
+    <None Remove="Content\Dungeons\Level16\terreno.png" />
+    <None Remove="Content\Dungeons\Level17\Level.map" />
+    <None Remove="Content\Dungeons\Level17\terreno.png" />
+    <None Remove="Content\Dungeons\Level18\Level.map" />
+    <None Remove="Content\Dungeons\Level18\terreno.png" />
+    <None Remove="Content\Dungeons\Level19\Level.map" />
+    <None Remove="Content\Dungeons\Level19\terreno.png" />
+    <None Remove="Content\Dungeons\Level1\Level.map" />
+    <None Remove="Content\Dungeons\Level1\terreno.png" />
+    <None Remove="Content\Dungeons\Level20\Level.map" />
+    <None Remove="Content\Dungeons\Level20\terreno.png" />
+    <None Remove="Content\Dungeons\Level21\Level.map" />
+    <None Remove="Content\Dungeons\Level21\terreno.png" />
+    <None Remove="Content\Dungeons\Level22\Level.map" />
+    <None Remove="Content\Dungeons\Level22\terreno.png" />
+    <None Remove="Content\Dungeons\Level23\Level.map" />
+    <None Remove="Content\Dungeons\Level23\terreno.png" />
+    <None Remove="Content\Dungeons\Level24\Level.map" />
+    <None Remove="Content\Dungeons\Level24\terreno.png" />
+    <None Remove="Content\Dungeons\Level25\Level.map" />
+    <None Remove="Content\Dungeons\Level25\terreno.png" />
+    <None Remove="Content\Dungeons\Level26\Level.map" />
+    <None Remove="Content\Dungeons\Level26\terreno.png" />
+    <None Remove="Content\Dungeons\Level27\Level.map" />
+    <None Remove="Content\Dungeons\Level27\terreno.png" />
+    <None Remove="Content\Dungeons\Level28\Level.map" />
+    <None Remove="Content\Dungeons\Level28\terreno.png" />
+    <None Remove="Content\Dungeons\Level29\Level.map" />
+    <None Remove="Content\Dungeons\Level29\terreno.png" />
+    <None Remove="Content\Dungeons\Level2\Level.map" />
+    <None Remove="Content\Dungeons\Level2\terreno.png" />
+    <None Remove="Content\Dungeons\Level30\Level.map" />
+    <None Remove="Content\Dungeons\Level30\terreno.png" />
+    <None Remove="Content\Dungeons\Level31\Level.map" />
+    <None Remove="Content\Dungeons\Level31\terreno.png" />
+    <None Remove="Content\Dungeons\Level32\Level.map" />
+    <None Remove="Content\Dungeons\Level32\terreno.png" />
+    <None Remove="Content\Dungeons\Level33\Level.map" />
+    <None Remove="Content\Dungeons\Level33\terreno.png" />
+    <None Remove="Content\Dungeons\Level3\Level.map" />
+    <None Remove="Content\Dungeons\Level3\terreno.png" />
+    <None Remove="Content\Dungeons\Level4\Level.map" />
+    <None Remove="Content\Dungeons\Level4\terreno.png" />
+    <None Remove="Content\Dungeons\Level5\Level.map" />
+    <None Remove="Content\Dungeons\Level5\terreno.png" />
+    <None Remove="Content\Dungeons\Level6\Level.map" />
+    <None Remove="Content\Dungeons\Level6\terreno.png" />
+    <None Remove="Content\Dungeons\Level7\Level.map" />
+    <None Remove="Content\Dungeons\Level7\terreno.png" />
+    <None Remove="Content\Dungeons\Level8\Level.map" />
+    <None Remove="Content\Dungeons\Level8\terreno.png" />
+    <None Remove="Content\Dungeons\Level9\Level.map" />
+    <None Remove="Content\Dungeons\Level9\terreno.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\001_WAITUP.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\004_UP1.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\005_UP2.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\006_DOWN1.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\007_DOWN2.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\008_LEFT1.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\009_LEFT2.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\Bosses\AntiSganon\016_DEAD%28Unused%29.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\001_WAITUP.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\004_UP1.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\005_UP2.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\006_DOWN1.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\007_DOWN2.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\008_LEFT1.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\009_LEFT2.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\Bosses\FiendDragon\016_DEAD.png" />
+    <None Remove="Content\Enemies\Bosses\GeneratoreNemici\000_SPRITE.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\001_WAITUP.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\004_UP1.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\005_UP2.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\006_DOWN1.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\007_DOWN2.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\008_LEFT1.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\009_LEFT2.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\Bosses\MegaWaterTank\016_DEAD.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\001_WAITUP.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\004_UP1.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\005_UP2.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\006_DOWN1.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\007_DOWN2.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\008_LEFT1.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\009_LEFT2.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\012_ATTACK_UP.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Enemies\Bosses\Tomonobu\016_DEAD.png" />
+    <None Remove="Content\Enemies\EarthTank\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\EarthTank\001_WAITUP.png" />
+    <None Remove="Content\Enemies\EarthTank\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\EarthTank\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\EarthTank\004_UP1.png" />
+    <None Remove="Content\Enemies\EarthTank\005_UP2.png" />
+    <None Remove="Content\Enemies\EarthTank\006_DOWN1.png" />
+    <None Remove="Content\Enemies\EarthTank\007_DOWN2.png" />
+    <None Remove="Content\Enemies\EarthTank\008_LEFT1.png" />
+    <None Remove="Content\Enemies\EarthTank\009_LEFT2.png" />
+    <None Remove="Content\Enemies\EarthTank\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\EarthTank\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\EarthTank\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\EarthTank\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\EarthTank\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\EarthTank\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\EarthTank\016_DEAD.png" />
+    <None Remove="Content\Enemies\EnemyShip1\000_WAITDOWN.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\001_WAITUP.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\002_WAITLEFT.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\003_WAITRIGHT.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\004_UP1.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\005_UP2.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\006_DOWN1.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\007_DOWN2.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\008_LEFT1.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\009_LEFT2.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\010_RIGHT1.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\011_RIGHT2.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\012_ATTACKUP.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\013_ATTACKDOWN.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\014_ATTACKLEFT.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\015_ATTACKRIGHT.PNG" />
+    <None Remove="Content\Enemies\EnemyShip1\016_DEAD.png" />
+    <None Remove="Content\Enemies\EnemyShip\000_WAITDOWN.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\001_WAITUP.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\002_WAITLEFT.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\003_WAITRIGHT.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\004_UP1.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\005_UP2.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\006_DOWN1.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\007_DOWN2.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\008_LEFT1.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\009_LEFT2.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\010_RIGHT1.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\011_RIGHT2.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\012_ATTACKUP.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\013_ATTACKDOWN.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\014_ATTACKLEFT.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\015_ATTACKRIGHT.PNG" />
+    <None Remove="Content\Enemies\EnemyShip\016_DEAD.png" />
+    <None Remove="Content\Enemies\FightingPuppet\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\FightingPuppet\001_WAITUP.png" />
+    <None Remove="Content\Enemies\FightingPuppet\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\FightingPuppet\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\FightingPuppet\004_UP1.png" />
+    <None Remove="Content\Enemies\FightingPuppet\005_UP2.png" />
+    <None Remove="Content\Enemies\FightingPuppet\006_DOWN1.png" />
+    <None Remove="Content\Enemies\FightingPuppet\007_DOWN2.png" />
+    <None Remove="Content\Enemies\FightingPuppet\008_LEFT1.png" />
+    <None Remove="Content\Enemies\FightingPuppet\009_LEFT2.png" />
+    <None Remove="Content\Enemies\FightingPuppet\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\FightingPuppet\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\FightingPuppet\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\FightingPuppet\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\FightingPuppet\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\FightingPuppet\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\FightingPuppet\016_DEAD.png" />
+    <None Remove="Content\Enemies\Goomba\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\Goomba\001_WAITUP.png" />
+    <None Remove="Content\Enemies\Goomba\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\Goomba\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\Goomba\004_UP1.png" />
+    <None Remove="Content\Enemies\Goomba\005_UP2.png" />
+    <None Remove="Content\Enemies\Goomba\006_DOWN1.png" />
+    <None Remove="Content\Enemies\Goomba\007_DOWN2.png" />
+    <None Remove="Content\Enemies\Goomba\008_LEFT1.png" />
+    <None Remove="Content\Enemies\Goomba\009_LEFT2.png" />
+    <None Remove="Content\Enemies\Goomba\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\Goomba\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\Goomba\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\Goomba\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\Goomba\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\Goomba\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\Goomba\016_DEAD.png" />
+    <None Remove="Content\Enemies\LittleDevil\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\LittleDevil\001_WAITUP.png" />
+    <None Remove="Content\Enemies\LittleDevil\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\LittleDevil\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\LittleDevil\004_UP1.png" />
+    <None Remove="Content\Enemies\LittleDevil\005_UP2.png" />
+    <None Remove="Content\Enemies\LittleDevil\006_DOWN1.png" />
+    <None Remove="Content\Enemies\LittleDevil\007_DOWN2.png" />
+    <None Remove="Content\Enemies\LittleDevil\008_LEFT1.png" />
+    <None Remove="Content\Enemies\LittleDevil\009_LEFT2.png" />
+    <None Remove="Content\Enemies\LittleDevil\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\LittleDevil\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\LittleDevil\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\LittleDevil\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\LittleDevil\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\LittleDevil\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\LittleDevil\016_DEAD.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\001_WAITUP.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\004_UP1.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\005_UP2.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\006_DOWN1.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\007_DOWN2.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\008_LEFT1.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\009_LEFT2.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\MegaOctorockRed\016_DEAD.png" />
+    <None Remove="Content\Enemies\Myself\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\Myself\001_WAITUP.png" />
+    <None Remove="Content\Enemies\Myself\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\Myself\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\Myself\004_UP1.png" />
+    <None Remove="Content\Enemies\Myself\005_UP2.png" />
+    <None Remove="Content\Enemies\Myself\006_DOWN1.png" />
+    <None Remove="Content\Enemies\Myself\007_DOWN2.png" />
+    <None Remove="Content\Enemies\Myself\008_LEFT1.png" />
+    <None Remove="Content\Enemies\Myself\009_LEFT2.png" />
+    <None Remove="Content\Enemies\Myself\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\Myself\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\Myself\012_ATTACK_UP.png" />
+    <None Remove="Content\Enemies\Myself\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Enemies\Myself\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Enemies\Myself\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Enemies\Myself\016_DEAD.png" />
+    <None Remove="Content\Enemies\OctorockRed\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\OctorockRed\001_WAITUP.png" />
+    <None Remove="Content\Enemies\OctorockRed\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\OctorockRed\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\OctorockRed\004_UP1.png" />
+    <None Remove="Content\Enemies\OctorockRed\005_UP2.png" />
+    <None Remove="Content\Enemies\OctorockRed\006_DOWN1.png" />
+    <None Remove="Content\Enemies\OctorockRed\007_DOWN2.png" />
+    <None Remove="Content\Enemies\OctorockRed\008_LEFT1.png" />
+    <None Remove="Content\Enemies\OctorockRed\009_LEFT2.png" />
+    <None Remove="Content\Enemies\OctorockRed\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\OctorockRed\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\OctorockRed\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\OctorockRed\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\OctorockRed\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\OctorockRed\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\OctorockRed\016_DEAD.png" />
+    <None Remove="Content\Enemies\Prematurator\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\Prematurator\001_WAITUP.png" />
+    <None Remove="Content\Enemies\Prematurator\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\Prematurator\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\Prematurator\004_UP1.png" />
+    <None Remove="Content\Enemies\Prematurator\005_UP2.png" />
+    <None Remove="Content\Enemies\Prematurator\006_DOWN1.png" />
+    <None Remove="Content\Enemies\Prematurator\007_DOWN2.png" />
+    <None Remove="Content\Enemies\Prematurator\008_LEFT1.png" />
+    <None Remove="Content\Enemies\Prematurator\009_LEFT2.png" />
+    <None Remove="Content\Enemies\Prematurator\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\Prematurator\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\Prematurator\012_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\Prematurator\013_ATTACKUP.png" />
+    <None Remove="Content\Enemies\Prematurator\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\Prematurator\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\Prematurator\016_DEAD.png" />
+    <None Remove="Content\Enemies\Snake\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\Snake\001_WAITUP.png" />
+    <None Remove="Content\Enemies\Snake\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\Snake\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\Snake\004_UP1.png" />
+    <None Remove="Content\Enemies\Snake\005_UP2.png" />
+    <None Remove="Content\Enemies\Snake\006_DOWN1.png" />
+    <None Remove="Content\Enemies\Snake\007_DOWN2.png" />
+    <None Remove="Content\Enemies\Snake\008_LEFT1.png" />
+    <None Remove="Content\Enemies\Snake\009_LEFT2.png" />
+    <None Remove="Content\Enemies\Snake\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\Snake\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\Snake\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\Snake\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\Snake\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\Snake\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\Snake\016_DEAD.png" />
+    <None Remove="Content\Enemies\WaterTank\000_WAITDOWN.png" />
+    <None Remove="Content\Enemies\WaterTank\001_WAITUP.png" />
+    <None Remove="Content\Enemies\WaterTank\002_WAITLEFT.png" />
+    <None Remove="Content\Enemies\WaterTank\003_WAITRIGHT.png" />
+    <None Remove="Content\Enemies\WaterTank\004_UP1.png" />
+    <None Remove="Content\Enemies\WaterTank\005_UP2.png" />
+    <None Remove="Content\Enemies\WaterTank\006_DOWN1.png" />
+    <None Remove="Content\Enemies\WaterTank\007_DOWN2.png" />
+    <None Remove="Content\Enemies\WaterTank\008_LEFT1.png" />
+    <None Remove="Content\Enemies\WaterTank\009_LEFT2.png" />
+    <None Remove="Content\Enemies\WaterTank\010_RIGHT1.png" />
+    <None Remove="Content\Enemies\WaterTank\011_RIGHT2.png" />
+    <None Remove="Content\Enemies\WaterTank\012_ATTACKUP.png" />
+    <None Remove="Content\Enemies\WaterTank\013_ATTACKDOWN.png" />
+    <None Remove="Content\Enemies\WaterTank\014_ATTACKLEFT.png" />
+    <None Remove="Content\Enemies\WaterTank\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Enemies\WaterTank\016_DEAD.png" />
+    <None Remove="Content\GameSettings.cfg" />
+    <None Remove="Content\Level.map" />
+    <None Remove="Content\Menu\Level.map" />
+    <None Remove="Content\Menu\terreno.png" />
+    <None Remove="Content\Players\Caius\000_WAITDOWN.png" />
+    <None Remove="Content\Players\Caius\001_WAITUP.png" />
+    <None Remove="Content\Players\Caius\002_WAITLEFT.png" />
+    <None Remove="Content\Players\Caius\003_WAITRIGHT.png" />
+    <None Remove="Content\Players\Caius\004_UP1.png" />
+    <None Remove="Content\Players\Caius\005_UP2.png" />
+    <None Remove="Content\Players\Caius\006_DOWN1.png" />
+    <None Remove="Content\Players\Caius\007_DOWN2.png" />
+    <None Remove="Content\Players\Caius\008_LEFT1.png" />
+    <None Remove="Content\Players\Caius\009_LEFT2.png" />
+    <None Remove="Content\Players\Caius\010_RIGHT1.png" />
+    <None Remove="Content\Players\Caius\011_RIGHT2.png" />
+    <None Remove="Content\Players\Caius\012_ATTACK_UP.png" />
+    <None Remove="Content\Players\Caius\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Players\Caius\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Players\Caius\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Players\Caius\016_DEAD.png" />
+    <None Remove="Content\Players\Caius\BlueLink.png" />
+    <None Remove="Content\Players\LinkBlack\000_WAITDOWN.png" />
+    <None Remove="Content\Players\LinkBlack\001_WAITUP.png" />
+    <None Remove="Content\Players\LinkBlack\002_WAITLEFT.png" />
+    <None Remove="Content\Players\LinkBlack\003_WAITRIGHT.png" />
+    <None Remove="Content\Players\LinkBlack\004_UP1.png" />
+    <None Remove="Content\Players\LinkBlack\005_UP2.png" />
+    <None Remove="Content\Players\LinkBlack\006_DOWN1.png" />
+    <None Remove="Content\Players\LinkBlack\007_DOWN2.png" />
+    <None Remove="Content\Players\LinkBlack\008_LEFT1.png" />
+    <None Remove="Content\Players\LinkBlack\009_LEFT2.png" />
+    <None Remove="Content\Players\LinkBlack\010_RIGHT1.png" />
+    <None Remove="Content\Players\LinkBlack\011_RIGHT2.png" />
+    <None Remove="Content\Players\LinkBlack\012_ATTACK_UP.png" />
+    <None Remove="Content\Players\LinkBlack\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Players\LinkBlack\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Players\LinkBlack\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Players\LinkBlack\016_DEAD.png" />
+    <None Remove="Content\Players\LinkBlack\BlueLink.png" />
+    <None Remove="Content\Players\LinkBlue\000_WAITDOWN.png" />
+    <None Remove="Content\Players\LinkBlue\001_WAITUP.png" />
+    <None Remove="Content\Players\LinkBlue\002_WAITLEFT.png" />
+    <None Remove="Content\Players\LinkBlue\003_WAITRIGHT.png" />
+    <None Remove="Content\Players\LinkBlue\004_UP1.png" />
+    <None Remove="Content\Players\LinkBlue\005_UP2.png" />
+    <None Remove="Content\Players\LinkBlue\006_DOWN1.png" />
+    <None Remove="Content\Players\LinkBlue\007_DOWN2.png" />
+    <None Remove="Content\Players\LinkBlue\008_LEFT1.png" />
+    <None Remove="Content\Players\LinkBlue\009_LEFT2.png" />
+    <None Remove="Content\Players\LinkBlue\010_RIGHT1.png" />
+    <None Remove="Content\Players\LinkBlue\011_RIGHT2.png" />
+    <None Remove="Content\Players\LinkBlue\012_ATTACK_UP.png" />
+    <None Remove="Content\Players\LinkBlue\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Players\LinkBlue\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Players\LinkBlue\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Players\LinkBlue\016_DEAD.png" />
+    <None Remove="Content\Players\LinkBlue\BlueLink.png" />
+    <None Remove="Content\Players\LinkDark\000_WAITDOWN.png" />
+    <None Remove="Content\Players\LinkDark\001_WAITUP.png" />
+    <None Remove="Content\Players\LinkDark\002_WAITLEFT.png" />
+    <None Remove="Content\Players\LinkDark\003_WAITRIGHT.png" />
+    <None Remove="Content\Players\LinkDark\004_UP1.png" />
+    <None Remove="Content\Players\LinkDark\005_UP2.png" />
+    <None Remove="Content\Players\LinkDark\006_DOWN1.png" />
+    <None Remove="Content\Players\LinkDark\007_DOWN2.png" />
+    <None Remove="Content\Players\LinkDark\008_LEFT1.png" />
+    <None Remove="Content\Players\LinkDark\009_LEFT2.png" />
+    <None Remove="Content\Players\LinkDark\010_RIGHT1.png" />
+    <None Remove="Content\Players\LinkDark\011_RIGHT2.png" />
+    <None Remove="Content\Players\LinkDark\012_ATTACK_UP.png" />
+    <None Remove="Content\Players\LinkDark\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Players\LinkDark\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Players\LinkDark\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Players\LinkDark\016_DEAD.png" />
+    <None Remove="Content\Players\LinkDark\BlueLink.png" />
+    <None Remove="Content\Players\LinkPurple\000_WAITDOWN.png" />
+    <None Remove="Content\Players\LinkPurple\001_WAITUP.png" />
+    <None Remove="Content\Players\LinkPurple\002_WAITLEFT.png" />
+    <None Remove="Content\Players\LinkPurple\003_WAITRIGHT.png" />
+    <None Remove="Content\Players\LinkPurple\004_UP1.png" />
+    <None Remove="Content\Players\LinkPurple\005_UP2.png" />
+    <None Remove="Content\Players\LinkPurple\006_DOWN1.png" />
+    <None Remove="Content\Players\LinkPurple\007_DOWN2.png" />
+    <None Remove="Content\Players\LinkPurple\008_LEFT1.png" />
+    <None Remove="Content\Players\LinkPurple\009_LEFT2.png" />
+    <None Remove="Content\Players\LinkPurple\010_RIGHT1.png" />
+    <None Remove="Content\Players\LinkPurple\011_RIGHT2.png" />
+    <None Remove="Content\Players\LinkPurple\012_ATTACK_UP.png" />
+    <None Remove="Content\Players\LinkPurple\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Players\LinkPurple\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Players\LinkPurple\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Players\LinkPurple\016_DEAD.png" />
+    <None Remove="Content\Players\LinkPurple\BlueLink.png" />
+    <None Remove="Content\Players\LinkRed\000_WAITDOWN.png" />
+    <None Remove="Content\Players\LinkRed\001_WAITUP.png" />
+    <None Remove="Content\Players\LinkRed\002_WAITLEFT.png" />
+    <None Remove="Content\Players\LinkRed\003_WAITRIGHT.png" />
+    <None Remove="Content\Players\LinkRed\004_UP1.png" />
+    <None Remove="Content\Players\LinkRed\005_UP2.png" />
+    <None Remove="Content\Players\LinkRed\006_DOWN1.png" />
+    <None Remove="Content\Players\LinkRed\007_DOWN2.png" />
+    <None Remove="Content\Players\LinkRed\008_LEFT1.png" />
+    <None Remove="Content\Players\LinkRed\009_LEFT2.png" />
+    <None Remove="Content\Players\LinkRed\010_RIGHT1.png" />
+    <None Remove="Content\Players\LinkRed\011_RIGHT2.png" />
+    <None Remove="Content\Players\LinkRed\012_ATTACK_UP.png" />
+    <None Remove="Content\Players\LinkRed\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Players\LinkRed\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Players\LinkRed\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Players\LinkRed\016_DEAD.png" />
+    <None Remove="Content\Players\LinkRed\BlueLink.png" />
+    <None Remove="Content\Players\PlayerShip\000_WAITDOWN.png" />
+    <None Remove="Content\Players\PlayerShip\001_WAITUP.png" />
+    <None Remove="Content\Players\PlayerShip\002_WAITLEFT.png" />
+    <None Remove="Content\Players\PlayerShip\003_WAITRIGHT.png" />
+    <None Remove="Content\Players\PlayerShip\004_UP1.png" />
+    <None Remove="Content\Players\PlayerShip\005_UP2.png" />
+    <None Remove="Content\Players\PlayerShip\006_DOWN1.png" />
+    <None Remove="Content\Players\PlayerShip\007_DOWN2.png" />
+    <None Remove="Content\Players\PlayerShip\008_LEFT1.png" />
+    <None Remove="Content\Players\PlayerShip\009_LEFT2.png" />
+    <None Remove="Content\Players\PlayerShip\010_RIGHT1.png" />
+    <None Remove="Content\Players\PlayerShip\011_RIGHT2.png" />
+    <None Remove="Content\Players\PlayerShip\012_ATTACKUP.png" />
+    <None Remove="Content\Players\PlayerShip\013_ATTACKDOWN.png" />
+    <None Remove="Content\Players\PlayerShip\014_ATTACKLEFT.png" />
+    <None Remove="Content\Players\PlayerShip\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Players\PlayerShip\016_DEAD.png" />
+    <None Remove="Content\Players\Tomonobu\000_WAITDOWN.png" />
+    <None Remove="Content\Players\Tomonobu\001_WAITUP.png" />
+    <None Remove="Content\Players\Tomonobu\002_WAITLEFT.png" />
+    <None Remove="Content\Players\Tomonobu\003_WAITRIGHT.png" />
+    <None Remove="Content\Players\Tomonobu\004_UP1.png" />
+    <None Remove="Content\Players\Tomonobu\005_UP2.png" />
+    <None Remove="Content\Players\Tomonobu\006_DOWN1.png" />
+    <None Remove="Content\Players\Tomonobu\007_DOWN2.png" />
+    <None Remove="Content\Players\Tomonobu\008_LEFT1.png" />
+    <None Remove="Content\Players\Tomonobu\009_LEFT2.png" />
+    <None Remove="Content\Players\Tomonobu\010_RIGHT1.png" />
+    <None Remove="Content\Players\Tomonobu\011_RIGHT2.png" />
+    <None Remove="Content\Players\Tomonobu\012_ATTACK_UP.png" />
+    <None Remove="Content\Players\Tomonobu\013_ATTACK_DOWN.png" />
+    <None Remove="Content\Players\Tomonobu\014_ATTACK_LEFT.png" />
+    <None Remove="Content\Players\Tomonobu\015_ATTACK_RIGHT.png" />
+    <None Remove="Content\Players\Tomonobu\016_DEAD.png" />
+    <None Remove="Content\PowerUps\AttackBigBonus.png" />
+    <None Remove="Content\PowerUps\AttackMalus.png" />
+    <None Remove="Content\PowerUps\AttackSmallBonus.png" />
+    <None Remove="Content\PowerUps\BigMedikit.png" />
+    <None Remove="Content\PowerUps\BlueLaserScroll.png" />
+    <None Remove="Content\PowerUps\FlameShotScroll.png" />
+    <None Remove="Content\PowerUps\GreenLaserScroll.png" />
+    <None Remove="Content\PowerUps\MediumMedikit.png" />
+    <None Remove="Content\PowerUps\RedLaserScroll.png" />
+    <None Remove="Content\PowerUps\SmallMedikit.png" />
+    <None Remove="Content\PowerUps\SpeedBonus.png" />
+    <None Remove="Content\PowerUps\SpeedMalus.png" />
+    <None Remove="Content\PowerUps\UltimateFlameShotScroll.png" />
+    <None Remove="Content\Projectiles\BlueLaser\0_UP.png" />
+    <None Remove="Content\Projectiles\BlueLaser\1_DOWN.png" />
+    <None Remove="Content\Projectiles\BlueLaser\2_LEFT.png" />
+    <None Remove="Content\Projectiles\BlueLaser\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\CannonBall\0_UP.png" />
+    <None Remove="Content\Projectiles\CannonBall\1_DOWN.png" />
+    <None Remove="Content\Projectiles\CannonBall\2_LEFT.png" />
+    <None Remove="Content\Projectiles\CannonBall\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\DarkFlameShot\0_UP.png" />
+    <None Remove="Content\Projectiles\DarkFlameShot\1_DOWN.png" />
+    <None Remove="Content\Projectiles\DarkFlameShot\2_LEFT.png" />
+    <None Remove="Content\Projectiles\DarkFlameShot\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\EnergyBall\0_UP.png" />
+    <None Remove="Content\Projectiles\EnergyBall\1_DOWN.png" />
+    <None Remove="Content\Projectiles\EnergyBall\2_LEFT.png" />
+    <None Remove="Content\Projectiles\EnergyBall\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\FlameShot\0_UP.png" />
+    <None Remove="Content\Projectiles\FlameShot\1_DOWN.png" />
+    <None Remove="Content\Projectiles\FlameShot\2_LEFT.png" />
+    <None Remove="Content\Projectiles\FlameShot\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\GreenLaser\0_UP.png" />
+    <None Remove="Content\Projectiles\GreenLaser\1_DOWN.png" />
+    <None Remove="Content\Projectiles\GreenLaser\2_LEFT.png" />
+    <None Remove="Content\Projectiles\GreenLaser\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\PurpleFlameShot\0_UP.png" />
+    <None Remove="Content\Projectiles\PurpleFlameShot\1_DOWN.png" />
+    <None Remove="Content\Projectiles\PurpleFlameShot\2_LEFT.png" />
+    <None Remove="Content\Projectiles\PurpleFlameShot\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\RedFlameShot\0_UP.png" />
+    <None Remove="Content\Projectiles\RedFlameShot\1_DOWN.png" />
+    <None Remove="Content\Projectiles\RedFlameShot\2_LEFT.png" />
+    <None Remove="Content\Projectiles\RedFlameShot\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\RedLaser\0_UP.png" />
+    <None Remove="Content\Projectiles\RedLaser\1_DOWN.png" />
+    <None Remove="Content\Projectiles\RedLaser\2_LEFT.png" />
+    <None Remove="Content\Projectiles\RedLaser\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\Rocket\000_WAITDOWN.png" />
+    <None Remove="Content\Projectiles\Rocket\001_WAITUP.png" />
+    <None Remove="Content\Projectiles\Rocket\002_WAITLEFT.png" />
+    <None Remove="Content\Projectiles\Rocket\003_WAITRIGHT.png" />
+    <None Remove="Content\Projectiles\Rocket\004_UP1.png" />
+    <None Remove="Content\Projectiles\Rocket\005_UP2.png" />
+    <None Remove="Content\Projectiles\Rocket\006_DOWN1.png" />
+    <None Remove="Content\Projectiles\Rocket\007_DOWN2.png" />
+    <None Remove="Content\Projectiles\Rocket\008_LEFT1.png" />
+    <None Remove="Content\Projectiles\Rocket\009_LEFT2.png" />
+    <None Remove="Content\Projectiles\Rocket\010_RIGHT1.png" />
+    <None Remove="Content\Projectiles\Rocket\011_RIGHT2.png" />
+    <None Remove="Content\Projectiles\Rocket\012_ATTACKUP.png" />
+    <None Remove="Content\Projectiles\Rocket\013_ATTACKDOWN.png" />
+    <None Remove="Content\Projectiles\Rocket\014_ATTACKLEFT.png" />
+    <None Remove="Content\Projectiles\Rocket\015_ATTACKRIGHT.png" />
+    <None Remove="Content\Projectiles\Rocket\016_DEAD.png" />
+    <None Remove="Content\Projectiles\Rock\0_UP.png" />
+    <None Remove="Content\Projectiles\Rock\1_DOWN.png" />
+    <None Remove="Content\Projectiles\Rock\2_LEFT.png" />
+    <None Remove="Content\Projectiles\Rock\3_RIGHT.png" />
+    <None Remove="Content\Projectiles\Spear\0_UP.png" />
+    <None Remove="Content\Projectiles\Spear\1_DOWN.png" />
+    <None Remove="Content\Projectiles\Spear\2_LEFT.png" />
+    <None Remove="Content\Projectiles\Spear\3_RIGHT.png" />
+    <None Remove="Content\Saves.cfg" />
+    <None Remove="Content\Scores.cfg" />
+    <None Remove="Content\Sequences\Level1.seq" />
+    <None Remove="Content\Sequences\Level11.seq" />
+    <None Remove="Content\Sequences\Level12.seq" />
+    <None Remove="Content\Sequences\Level16.seq" />
+    <None Remove="Content\Sequences\Level17.seq" />
+    <None Remove="Content\Sequences\Level22.seq" />
+    <None Remove="Content\Sequences\Level26.seq" />
+    <None Remove="Content\Sequences\Level27.seq" />
+    <None Remove="Content\Sequences\Level31.seq" />
+    <None Remove="Content\Sequences\Level32.seq" />
+    <None Remove="Content\Sequences\Level33.seq" />
+    <None Remove="Content\Sequences\Level6.seq" />
+    <None Remove="Content\Sounds\Effects\CannonShot.wav" />
+    <None Remove="Content\Sounds\Effects\EnemyKilled.wav" />
+    <None Remove="Content\Sounds\Effects\LittleDevilLaugh.wav" />
+    <None Remove="Content\Sounds\Effects\PlayerShot.wav" />
+    <None Remove="Content\Sounds\Effects\PlayerSwordAttack.wav" />
+    <None Remove="Content\Sounds\Effects\PowerUpTouched.wav" />
+    <None Remove="Content\Sounds\Effects\ScrollTouched.wav" />
+    <None Remove="Content\Sounds\Effects\SwitchPressed.wav" />
+    <None Remove="Content\Sounds\Tracks\Epilogue.mp3" />
+    <None Remove="Content\Sounds\Tracks\Menu.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track1.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track10.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track11.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track12.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track13.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track2.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track3.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track4.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track5.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track6.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track7.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track8.mp3" />
+    <None Remove="Content\Sounds\Tracks\Track9.mp3" />
+    <None Remove="Content\SpriteTesto.spritefont" />
+    <None Remove="Content\SpriteTesto.xnb" />
+    <None Remove="Content\Switches\SwitchableWalls\1.png" />
+    <None Remove="Content\Switches\SwitchableWalls\2.png" />
+    <None Remove="Content\Switches\SwitchableWalls\3.png" />
+    <None Remove="Content\Switches\Tipo1\0.png" />
+    <None Remove="Content\Switches\Tipo1\1.png" />
+    <None Remove="Content\Switches\Tipo2\0.png" />
+    <None Remove="Content\Switches\Tipo2\1.png" />
+    <None Remove="Content\Switches\Tipo3\0.png" />
+    <None Remove="Content\Switches\Tipo3\1.png" />
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\Allies\Mana\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\012_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\013_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Mana\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\012_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\013_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Allies\Prematurator\016_DEAD(Unused).png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Arena\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Arena\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Arena\winner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Cursors\Sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level10\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level10\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level11\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level11\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level12\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level12\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level13\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level13\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level14\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level14\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level15\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level15\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level16\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level16\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level17\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level17\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level18\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level18\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level19\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level19\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level1\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level1\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level20\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level20\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level21\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level21\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level22\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level22\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level23\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level23\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level24\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level24\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level25\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level25\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level26\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level26\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level27\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level27\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level28\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level28\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level29\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level29\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level2\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level2\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level30\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level30\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level31\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level31\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level32\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level32\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level33\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level33\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level3\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level3\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level4\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level4\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level5\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level5\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level6\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level6\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level7\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level7\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level8\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level8\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level9\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Dungeons\Level9\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\AntiSganon\016_DEAD(Unused).png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\FiendDragon\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\GeneratoreNemici\000_SPRITE.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\MegaWaterTank\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Bosses\Tomonobu\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EarthTank\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\000_WAITDOWN.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\001_WAITUP.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\002_WAITLEFT.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\003_WAITRIGHT.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\004_UP1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\005_UP2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\006_DOWN1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\007_DOWN2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\008_LEFT1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\009_LEFT2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\010_RIGHT1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\011_RIGHT2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\012_ATTACKUP.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\013_ATTACKDOWN.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\014_ATTACKLEFT.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\015_ATTACKRIGHT.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip1\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\000_WAITDOWN.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\001_WAITUP.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\002_WAITLEFT.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\003_WAITRIGHT.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\004_UP1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\005_UP2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\006_DOWN1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\007_DOWN2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\008_LEFT1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\009_LEFT2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\010_RIGHT1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\011_RIGHT2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\012_ATTACKUP.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\013_ATTACKDOWN.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\014_ATTACKLEFT.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\015_ATTACKRIGHT.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\EnemyShip\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\FightingPuppet\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Goomba\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\LittleDevil\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\MegaOctorockRed\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Myself\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\OctorockRed\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\012_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\013_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Prematurator\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\Snake\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Enemies\WaterTank\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\GameSettings.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Menu\Level.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Menu\terreno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Caius\BlueLink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlack\BlueLink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkBlue\BlueLink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkDark\BlueLink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkPurple\BlueLink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\LinkRed\BlueLink.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\PlayerShip\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\012_ATTACK_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\013_ATTACK_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\014_ATTACK_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\015_ATTACK_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Players\Tomonobu\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\AttackBigBonus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\AttackMalus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\AttackSmallBonus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\BigMedikit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\BlueLaserScroll.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\FlameShotScroll.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\GreenLaserScroll.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\MediumMedikit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\RedLaserScroll.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\SmallMedikit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\SpeedBonus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\SpeedMalus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\PowerUps\UltimateFlameShotScroll.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\BlueLaser\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\BlueLaser\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\BlueLaser\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\BlueLaser\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\CannonBall\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\CannonBall\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\CannonBall\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\CannonBall\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\DarkFlameShot\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\DarkFlameShot\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\DarkFlameShot\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\DarkFlameShot\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\EnergyBall\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\EnergyBall\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\EnergyBall\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\EnergyBall\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\FlameShot\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\FlameShot\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\FlameShot\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\FlameShot\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\GreenLaser\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\GreenLaser\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\GreenLaser\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\GreenLaser\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\PurpleFlameShot\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\PurpleFlameShot\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\PurpleFlameShot\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\PurpleFlameShot\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\RedFlameShot\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\RedFlameShot\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\RedFlameShot\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\RedFlameShot\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\RedLaser\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\RedLaser\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\RedLaser\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\RedLaser\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\000_WAITDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\001_WAITUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\002_WAITLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\003_WAITRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\004_UP1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\005_UP2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\006_DOWN1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\007_DOWN2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\008_LEFT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\009_LEFT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\010_RIGHT1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\011_RIGHT2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\012_ATTACKUP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\013_ATTACKDOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\014_ATTACKLEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\015_ATTACKRIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rocket\016_DEAD.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rock\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rock\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rock\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Rock\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Spear\0_UP.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Spear\1_DOWN.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Spear\2_LEFT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Projectiles\Spear\3_RIGHT.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Saves.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Scores.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level1.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level11.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level12.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level16.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level17.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level22.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level26.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level27.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level31.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level32.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level33.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sequences\Level6.seq">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sounds\Effects\CannonShot.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sounds\Effects\EnemyKilled.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sounds\Effects\LittleDevilLaugh.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sounds\Effects\PlayerShot.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sounds\Effects\PlayerSwordAttack.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sounds\Effects\PowerUpTouched.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sounds\Effects\ScrollTouched.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Sounds\Effects\SwitchPressed.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Content\Sounds\Tracks\Epilogue.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Menu.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track1.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track10.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track11.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track12.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track13.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track2.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track3.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track4.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track5.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track6.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track7.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track8.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Sounds\Tracks\Track9.mp3">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Content\SpriteTesto.spritefont">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\SpriteTesto.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\SwitchableWalls\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\SwitchableWalls\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\SwitchableWalls\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\Tipo1\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\Tipo1\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\Tipo2\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\Tipo2\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\Tipo3\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\Switches\Tipo3\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+</Project>
